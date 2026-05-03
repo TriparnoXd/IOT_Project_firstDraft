@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-base: #080C10;
+  --color-bg-surface: #0D1117;
+  --color-bg-elevated: #161B22;
+  --color-border-subtle: #21262D;
+  --color-border-active: #30363D;
+  
+  --color-signal-green: #00FF94;
+  --color-signal-amber: #FFB800;
+  --color-signal-red: #FF4444;
+  --color-signal-blue: #00A8FF;
+  --color-signal-purple: #9D4EDD;
+  
+  --color-accent: #00D4FF;
+  --color-accent-dim: rgba(0, 212, 255, 0.15);
+  
+  --color-text-primary: #E6EDF3;
+  --color-text-secondary: #8B949E;
+  --color-text-muted: #484F58;
+  --color-text-accent: #00D4FF;
+
+  --font-display: "DM Mono", monospace;
+  --font-body: "Syne", sans-serif;
+  --font-mono: "DM Mono", monospace;
+  --font-accent: "Orbitron", sans-serif;
+}
+
+@layer base {
+  :root {
+    --bg-base: #080C10;
+    --bg-surface: #0D1117;
+    --bg-elevated: #161B22;
+    --border-subtle: #21262D;
+    --border-active: #30363D;
+    --signal-green: #00FF94;
+    --signal-amber: #FFB800;
+    --signal-red: #FF4444;
+    --signal-blue: #00A8FF;
+    --signal-purple: #9D4EDD;
+    --accent: #00D4FF;
+    --accent-dim: rgba(0, 212, 255, 0.15);
+    --text-primary: #E6EDF3;
+    --text-secondary: #8B949E;
+    --text-muted: #484F58;
+    --text-accent: #00D4FF;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+  }
+}
